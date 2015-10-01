@@ -13,3 +13,52 @@
     <!-- end HubSpot Call-to-Action Code -->
     </div>
 </div>
+
+<style>
+/* SLIDEBOX STYLING START */
+/*remove background/padding with custom cta image/fix margin bottom*/
+#slidebox {
+    padding: 0;
+    background: none;
+    border: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 12.5rem;
+    position: fixed;
+    bottom: 0;
+    right: -430px;
+    z-index: 9999;
+    -webkit-transition: scale .75s ease-in-out; /* Safari */
+    transition: scale .75s ease-in-out;
+}
+
+#slidebox:hover {
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Chrome, Safari, Opera */
+    transform: scale(1.05);
+    -webkit-transition: scale .75s ease-in-out; /* Safari */
+    transition: scale .75s ease-in-out;
+}
+
+a.close {
+    background: transparent url(http://cdn2.hubspot.net/hub/53/file-527841348-gif/close.gif) no-repeat top left;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 10px;
+}
+
+a.close:hover {
+    background-position: 0 -13px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    #slidebox {
+       width: 100%;
+    }
+}
+/* SLIDEBOX STYLING END */
+</style>
